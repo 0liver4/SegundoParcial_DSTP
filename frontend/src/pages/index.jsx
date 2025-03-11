@@ -42,10 +42,10 @@ const IndexPage = () => {
             const saveResponse = await axios.post('http://localhost:5000/guardar-cedula', {
                 cedula, nombre, apellido, numero, direccion
             });
-            if (saveResponse.data.mensaje === "Cédula guardada") {
+            if (saveResponse.data.mensaje === "Cédula guardada!") {
                 setMensaje("Cédula guardada exitosamente");
             } else {
-                setMensaje("Error al guardar cédula");
+                setMensaje("sa");
             }
         } catch (error) {
             console.log(error);
