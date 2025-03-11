@@ -1,0 +1,25 @@
+body {
+    background: beige;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Aumenta el ancho del formulario para acomodar dos inputs por fila */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Añade un espacio entre los inputs */
+    margin-bottom: 10px; /* Añade un espacio entre los grupos de inputs */
+}
+
+input, button {
+    padding: 10px;
+    flex: 1; /* Hace que los inputs ocupen el mismo espacio */
+}
+
+button {
+    margin-top: 10px; /* Añade un margen superior al botón */
+}
